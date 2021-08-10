@@ -36,7 +36,8 @@
 body {
   color: var(--gray30);
   /* font-size: 10px; */
-  font-family: charter;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: charter; */
 }
 
 a {
