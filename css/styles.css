@@ -96,12 +96,21 @@ pre {
   height: 350px;
 }
 
-/*Solamente para visualización, no lo lee Google*/
-h3::before {
-  content: '*';
+.section-content {
+  counter-reset: titleList;
 }
 
-h3::after {
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+/*Solamente para visualización, no lo lee Google*/
+.section-content h3::before {
+  content: counter(titleList, decimal) ". ";
+  /* content: "-" counter(titleList, decimal) "-"; */
+}
+
+.section-content h3::after {
   content: '';
   width: 32px;
   height: 4px;
