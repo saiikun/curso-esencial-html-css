@@ -1,0 +1,125 @@
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-italic.otf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-bold-italic.otf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+:root {
+  font-size: 16px;
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
+  /* direction: rtl; */
+}
+
+body {
+  color: var(--gray30);
+  /* font-size: 10px; */
+  font-family: 'Roboto', sans-serif;
+  /* font-family: charter; */
+}
+
+a {
+  color: var(--gray10);
+}
+
+header {
+  /* --gray10: red; */
+  font-size: 14px;
+  color: var(--gray10);
+}
+
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+header a:hover {
+  color: var(--gray);
+}
+
+nav details summary {
+  font-weight: bold;
+
+}
+
+/* ol li:nth-child(even) {
+  border: 1px solid red;
+} */
+
+h1 {
+  /* font-size: 60px; */
+  font-size: 3.75em;
+  /* text-align: end; */
+}
+
+h2 {
+  /* font-size: 32px; */
+  font-size: 2em;
+}
+
+h3 {
+  /* font-size: 24px; */
+  font-size: 1.5em;
+}
+
+pre {
+  background: #FEC62E;
+}
+
+.hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png');
+  /* background: linear-gradient(3.36deg, #212325 -63.62%, rgba(255, 255, 255, 0) 43.49%), url('../images/pattern.png'); */
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), red 10%, transparent), url('../images/pattern.png'); */
+  /* background-repeat: no-repeat;
+  background-position: left 50px bottom -50px; */
+  /* background-size: cover; */
+  height: 350px;
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+/*Solamente para visualización, no lo lee Google*/
+.section-content h3::before {
+  content: counter(titleList, decimal) ". ";
+  /* content: "-" counter(titleList, decimal) "-"; */
+}
+
+.section-content h3::after {
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: var(--gray30);
+  display: inline-block;
+}
+
+/* ::selection{
+  background: purple;
+} */
