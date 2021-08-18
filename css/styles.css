@@ -31,6 +31,7 @@
   --gray30: #212121;
   --gray20: #212429;
   --gray10: #616161;
+  /* direction: rtl; */
 }
 
 body {
@@ -70,6 +71,7 @@ nav details summary {
 h1 {
   /* font-size: 60px; */
   font-size: 3.75em;
+  /* text-align: end; */
 }
 
 h2 {

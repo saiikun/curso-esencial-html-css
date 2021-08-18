@@ -27,7 +27,7 @@
 }
 
 :root {
-  font-size: 16px;
+  /* font-size: 16px; */
   --gray30: #212121;
   --gray20: #212429;
   --gray10: #616161;
@@ -88,10 +88,11 @@ h1 {
   background: red;
 } */
 
-h1 ~ p {/*Selector de hermanos*/
-  /* background: red; */
+/*Selectores hermanos*/
+/* h1 ~ p {
+  background: red;
   margin-bottom: 64px;
-}
+} */
 
 hr {
   /* color: var(--gray10); */
@@ -101,9 +102,7 @@ hr {
 h2 {
   /* font-size: 32px; */
   font-size: 2em;
-  /* margin: 64px 0 40px; Colapso */
-  margin-top: 64px;
-  margin-bottom: 40px;
+  margin: 64px 0 40px; /*Colapso*/
   font-weight: normal;
 }
 
@@ -117,8 +116,6 @@ h3 {
 }
 
 pre {
-  margin-top: 16px;
-  margin-bottom: 40px;
   background: #FEC62E;
 }
 
@@ -136,12 +133,12 @@ blockquote {
   height: 350px;
 }
 
-.section-content:first-of-type {
-  margin: 0;
-}
-
 .section-content {
   margin-top: 164px;
+}
+
+.section-content:first-of-type {
+  margin: 0;
 }
 
 .section-content ol li {
@@ -149,7 +146,7 @@ blockquote {
 }
 
 .section-content ul li {
-  margin: 16px 0;
+  margin: 16px;
 }
 
 .section-content + hr {
@@ -172,6 +169,7 @@ blockquote {
 .section-content h3::before {
   content: counter(titleList, decimal);
   /* content: "-" counter(titleList, decimal) "-"; */
+  /* margin-top: 0; */
 }
 
 .section-content h3::after {
