@@ -117,10 +117,33 @@ h3 {
 
 pre {
   background: #FEC62E;
+  /* padding: 40px; */
+  padding-top: 40px;
+  padding-right: 350.05px;
+  padding-bottom: px;
+  padding-left: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  line-height: 24px;
 }
 
 blockquote {
   margin: 32px 0;
+  padding-left: 16px;
+  border-left: 4px solid var(--gray30);
+  font-size: 24px;
+  /* font-family: 'Roboto'; */
+  font-weight: normal;
+  line-height: 16px;
+}
+
+blockquote span {
+  color: var(--gray10);
+}
+
+blockquote span::before {
+  color: var(--gray10);
+  content: "-";
 }
 
 .hero {
@@ -163,11 +186,13 @@ blockquote {
 
 .section-content h3 {
   counter-increment: titleList;
+  /* background: red; */
+  padding-bottom: 4px;
 }
 
 /*Solamente para visualización, no lo lee Google*/
 .section-content h3::before {
-  content: counter(titleList, decimal);
+  content: counter(titleList, decimal) ". ";
   /* content: "-" counter(titleList, decimal) "-"; */
   /* margin-top: 0; */
 }
