@@ -120,7 +120,7 @@ pre {
   /* padding: 40px; */
   padding-top: 40px;
   padding-right: 350.05px;
-  padding-bottom: px;
+  padding-bottom: 40px;
   padding-left: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
@@ -131,6 +131,12 @@ blockquote {
   margin: 32px 0;
   padding-left: 16px;
   border-left: 4px solid var(--gray30);
+  /* border: 10px solid red;
+  border-top: 1px solid pink;
+  border-top-color: aqua;
+  border-top-style: dashed;
+  border-radius: 50px;
+  border-radius: 50px 100px 10px 0; */
   font-size: 24px;
   /* font-family: 'Roboto'; */
   font-weight: normal;
