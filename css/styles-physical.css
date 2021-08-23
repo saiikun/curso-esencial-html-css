@@ -118,10 +118,10 @@ h3 {
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
-  width: 200px;
+  /* width: 200px;
   padding: 20px;
   border: 1px solid red;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
 pre {
@@ -159,6 +159,36 @@ blockquote span {
 blockquote span::before {
   color: var(--gray10);
   content: "-";
+}
+
+.main {
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png'); */
+  /* border: 1px solid red; */
+  /* background: purple; */
+
+}
+
+.wrapper {
+  width: 902px;
+  margin: auto;
+}
+
+.main-content {
+  /* background: blue; */
+  background: white;
+  padding: 20px;
+}
+
+.title {
+  background: red;
+}
+
+.services {
+  background: purple;
+}
+
+.pricing {
+  background: blue;
 }
 
 .debug {
