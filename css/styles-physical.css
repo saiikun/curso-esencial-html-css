@@ -34,6 +34,10 @@
   /* direction: rtl; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--gray30);
   /* font-size: 10px; */
@@ -46,10 +50,54 @@ a {
   color: var(--gray10);
 }
 
+/* header { */
+  /* --gray10: red; */
+  /* font-size: 14px; */
+  /* color: var(--gray10); */
+  /* position: sticky; */
+  /* border: 1px solid red; */
+  /* top: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* left: 0; */
+  /* margin: 50px; */
+  /* top left bottom right z-index */
+  /* top: 200px; */
+  /* left: 30px; */
+  /* right: 50px;
+  bottom: 100px; */
+  /* background: red; */
+  /* z-index: 1; */
+  /* position: relative;
+  position: absolute;
+  position: fixed;
+  position: sticky; */
+/* } */
+
 header {
   /* --gray10: red; */
+  margin-right: 47px;
   font-size: 14px;
+  width: 208px;
   color: var(--gray10);
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 64px;
+  /* right: 0; */
+  /* bottom: 0; */
+  left: -252px;
+  /* margin: 50px; */
+  /* top left bottom right z-index */
+  /* top: 200px; */
+  /* left: 30px; */
+  /* right: 50px;
+  bottom: 100px; */
+  /* background: red; */
+  z-index: 1;
+  /* position: relative;
+  position: absolute;
+  position: fixed;
+  position: sticky; */
 }
 
 header a {
@@ -62,7 +110,11 @@ header a:hover {
 
 nav details summary {
   font-weight: bold;
+  line-height: 24px;
+}
 
+header li {
+  margin-bottom: 16px;
 }
 
 /* ol li:nth-child(even) {
@@ -122,6 +174,9 @@ h3 {
   padding: 20px;
   border: 1px solid red;
   box-sizing: border-box; */
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 pre {
@@ -161,11 +216,21 @@ blockquote span::before {
   content: "-";
 }
 
+.header {
+  /* border: 1px solid red; */
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
 .main {
   /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png'); */
   /* border: 1px solid red; */
   /* background: purple; */
-
+  /* position: relative; */
 }
 
 .wrapper {
@@ -174,9 +239,8 @@ blockquote span::before {
 }
 
 .main-content {
-  /* background: blue; */
   background: white;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .title {
@@ -192,9 +256,9 @@ blockquote span::before {
 }
 
 .debug {
-  box-shadow: inset 0 0 0 50px red;
-  /* outline: 1px solid red; */
-  /* background: red; */
+  /* box-shadow: inset 0 0 0 50px red; */
+  outline: 1px solid red;
+  background: red;
   /* border: 1px solid red !important;
   box-sizing: border-box; */
 }
@@ -232,6 +296,7 @@ blockquote span::before {
 
 .section-content {
   margin-top: 164px;
+  position: relative;
 }
 
 .section-content:first-of-type {
@@ -261,7 +326,8 @@ blockquote span::before {
 .section-content h3 {
   counter-increment: titleList;
   /* background: red; */
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
+  padding-bottom: 8px;
 }
 
 /*Solamente para visualización, no lo lee Google*/
@@ -273,10 +339,14 @@ blockquote span::before {
 
 .section-content h3::after {
   content: '';
-  width: 32px;
+  width: 80px;
   height: 4px;
   background: var(--gray30);
   display: inline-block;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* ::selection{
