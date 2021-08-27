@@ -41,6 +41,7 @@
 
 body {
   color: var(--white30);
+  /* color: red; */
   /* font-size: 10px; */
   /* font-family: 'Nunito', sans-serif; */
   font-family: 'Nunito', sans-serif;
@@ -48,6 +49,7 @@ body {
   background: var(--white10);
   margin: 0;
   /* writing-mode: vertical-lr; */
+  /* writing-mode: vertical-rl; */
   /* margin: 10px 10px 10px 10px; */
   /* margin-inline: 100px; */
   /* margin-block: 100px; */
@@ -126,6 +128,14 @@ hr {
 
 pre {
   background: var(--white0);
+  /* max-inline-size: 100%; */
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  /* border: 1px solid red; */
+  overflow: auto;
+  border-radius: 8px;
 }
 
 p {
@@ -140,6 +150,19 @@ blockquote {
   /* border: 1px solid red; */
   background: var(--white0);
   border-radius: 8px;
+  /* padding: 24px; */
+  /* padding-inline: 24px;
+  padding-block: 24px; */
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+}
+
+blockquote p {
+  color: var(--white30);
+  line-height: 32px;
+  font-size: 24px;
 }
 
 .hero {
@@ -157,6 +180,8 @@ blockquote {
   margin-block-start: 40px;
   margin-block-end: 16px;
   display: block;
+  /* max-width: 100%; Esto se utiliza en propiedades y valores físicos*/
+  max-inline-size: 100%;
 }
 
 .section-content {
@@ -173,13 +198,13 @@ blockquote {
   /* content: "-" counter(titleList, decimal) "-"; */
 }
 
-.section-content h3::after {
+/* .section-content h3::after {
   content: '';
   width: 32px;
   height: 4px;
   background: var(--white30);
-  /* display: inline-block; */
-}
+  display: inline-block;
+} */
 
 /* ::selection{
   background: purple;
@@ -188,3 +213,36 @@ blockquote {
 .main hr {
   display: none;
 }
+
+.main {
+  /* border: 1px solid red; */
+  /* padding: 10px; */
+  /* background: red; */
+}
+
+.wrapper {
+  /* border: 1px solid yellow; */
+  /* max-width: ; Esto se utiliza en propiedades y valores físicos*/
+  /* inline-size: 636px;Esto se utiliza en propiedades y valores lógicos */
+  /* max-width: 636px; Esto se utiliza en propiedades y valores físicos*/
+  max-inline-size: 636px;/*Esto se utiliza en propiedades y valores lógicos*/
+  /* max-block-size: ; */
+  /* width: ; Esto es el largo en propiedades y valores  físicos*/
+  /* block-size: 100px; Esto se utiliza en propiedades y valores lógicos*/
+  /* overflow: hidden; Esto se utiliza en propiedades y valores lógicos*/
+  /* overflow: auto; Esto se utiliza en propiedades y valores lógicos*/
+  /* height: ; Esto es el alto en propiedades y valores físicos */
+  margin: auto;
+}
+
+.main-content {
+  /* border: 1px solid blue; */
+  /* padding: 60px; */
+  padding-inline: 16px;
+  /* background: blue; */
+}
+
+/* .section-content blockquote p {
+  color: var(--white30);
+  font-size: 24px;
+} */
