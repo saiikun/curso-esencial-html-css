@@ -65,10 +65,47 @@ body {
   border: 1px solid red;
 } */
 
+.header {
+  position: sticky;
+  /* inset-block-start: 0; */
+  inset-block-start: -44px;
+  /* background: red; */
+  /* position: absolute; */
+  /* position: fixed; */
+  /* height: 500px;
+  width: 500px; */
+  /* inset: 0; */
+  /* inset: 50px; */
+  /* inset-inline: 50px; */
+  /* inset-block: 50px; */
+  /* block-size: 500px; */
+  /* inline-size: 500px; */
+}
+
+.header-content {
+  position: relative;
+  inset-block-start: 64px;
+}
+
 header {
   /* --white10: red; */
   font-size: 14px;
   color: var(--white20);
+  position: absolute;
+  /* top */
+  /* inset-block-start: 64px; */
+  inset-block-start: 0;
+  /* bottom */
+  /* inset-block-end: ; */
+  /* left */
+  inset-inline-start: -208px;
+  /* right */
+  /* inset-inline-end: ; */
+  inline-size: 188px;
+}
+
+header li {
+  margin-block-end: 16px;
 }
 
 header a {
@@ -82,7 +119,7 @@ header a:hover {
 nav details summary {
   font-weight: bold;
   color: var(--white30);
-
+  margin-block-start: 24px;
 }
 
 /* ol li:nth-child(even) {
@@ -100,6 +137,8 @@ h1 {
   /* text-align: end; */
   margin-block-start: 64px;
   margin-block-end: 16px;
+  /* text-align: ; */
+  /* text-align: start; */
 }
 
 h2 {
@@ -228,18 +267,18 @@ blockquote p {
   display: none;
 }
 
-.main {
+/* .main { */
   /* border: 1px solid red; */
   /* padding: 10px; */
   /* background: red; */
-}
+/* } */
 
 .wrapper {
   /* border: 1px solid yellow; */
   /* max-width: ; Esto se utiliza en propiedades y valores físicos*/
   /* inline-size: 636px;Esto se utiliza en propiedades y valores lógicos */
   /* max-width: 636px; Esto se utiliza en propiedades y valores físicos*/
-  max-inline-size: 903px;/*Esto se utiliza en propiedades y valores lógicos*/
+  max-inline-size: 902px;/*Esto se utiliza en propiedades y valores lógicos*/
   /* max-block-size: ; */
   /* width: ; Esto es el largo en propiedades y valores  físicos*/
   /* block-size: 100px; Esto se utiliza en propiedades y valores lógicos*/
