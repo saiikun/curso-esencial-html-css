@@ -1,0 +1,301 @@
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-regular.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-italic.ttf');
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-bold.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-bold-italic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+:root {
+  font-size: 16px;
+  --white30: white;
+  --white20: #A5A3A5;
+  --white10: #251F24;
+  --white0: #3A3539;
+  /* direction: rtl; */
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+body {
+  color: var(--white30);
+  /* color: red; */
+  /* font-size: 10px; */
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Nunito', sans-serif;
+  /* font-family: nunito; */
+  background: var(--white10);
+  margin: 0;
+  /* writing-mode: vertical-lr; */
+  /* writing-mode: vertical-rl; */
+  /* margin: 10px 10px 10px 10px; */
+  /* margin-inline: 100px; */
+  /* margin-block: 100px; */
+  /* margin-block-start: 50px; */
+  /* margin-block-end: 50px; */
+  /* margin: 0 100px; */
+  /* margin-block: ; */
+}
+
+/* a {
+  color: var(--white10);
+  color: red;
+  border: 1px solid red;
+} */
+
+.header {
+  position: sticky;
+  /* inset-block-start: 0; */
+  inset-block-start: -44px;
+  /* background: red; */
+  /* position: absolute; */
+  /* position: fixed; */
+  /* height: 500px;
+  width: 500px; */
+  /* inset: 0; */
+  /* inset: 50px; */
+  /* inset-inline: 50px; */
+  /* inset-block: 50px; */
+  /* block-size: 500px; */
+  /* inline-size: 500px; */
+}
+
+.header-content {
+  position: relative;
+  inset-block-start: 64px;
+}
+
+header {
+  /* --white10: red; */
+  font-size: 14px;
+  color: var(--white20);
+  position: absolute;
+  /* top */
+  /* inset-block-start: 64px; */
+  inset-block-start: 0;
+  /* bottom */
+  /* inset-block-end: ; */
+  /* left */
+  inset-inline-start: -208px;
+  /* right */
+  /* inset-inline-end: ; */
+  inline-size: 188px;
+}
+
+header li {
+  margin-block-end: 16px;
+}
+
+header a {
+  color: var(--white20);
+  text-decoration: none;
+}
+header a:hover {
+  color: var(--white30);
+}
+
+nav details summary {
+  font-weight: bold;
+  color: var(--white30);
+  margin-block-start: 24px;
+}
+
+/* ol li:nth-child(even) {
+  border: 1px solid red;
+} */
+
+h1, h2 {
+  /* font-weight: normal; */
+  font-weight: bold;
+}
+
+h1 {
+  /* font-size: 60px; */
+  font-size: 4em;
+  /* text-align: end; */
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+  /* text-align: ; */
+  /* text-align: start; */
+}
+
+h2 {
+  /* font-size: 32px; */
+  font-size: 2.5em;
+  margin-block: 40px;
+}
+
+h3 {
+  /* font-size: 24px; */
+  font-size: 2em;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+/* img {
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+} */
+
+hr {
+  margin-block: 40px;
+  /* border-color: rgba(97, 97, 97, 0.2); */
+  border: 1px solid rgba(97, 97, 97, 0.2);
+}
+
+pre {
+  background: var(--white0);
+  /* max-inline-size: 100%; */
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  /* border: 1px solid red; */
+  overflow: auto;
+  border-radius: 8px;
+  border: 10px solid red;
+  border-left: 5px solid blue;
+  border-inline-start: 5px solid white;
+  border-block: 20px solid blue;
+  border-block-end: 20px solid pink;
+  border-inline-end: 20px solid green;
+  border-block-start-color: greenyellow;
+  border: 8px solid  #5551FF;
+  box-shadow: -10px 10px 0 0 #ABAAF6;
+  /* margin-block-end: 40px;
+  border-radius: 50%;
+  inline-size: 400px;
+  block-size: 400px; */
+  /* border-start-start-radius: 60px; */
+}
+
+p {
+  color: var(--white20);
+  font-size: 17px;
+  line-height: 24px;
+}
+
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  /* border: 1px solid red; */
+  background: var(--white0);
+  border-radius: 8px;
+  /* padding: 24px; */
+  /* padding-inline: 24px;
+  padding-block: 24px; */
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+}
+
+blockquote p {
+  color: var(--white30);
+  line-height: 32px;
+  font-size: 24px;
+}
+
+.hero {
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png'); */
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+  /* background: linear-gradient(3.36deg, #212325 -63.62%, rgba(255, 255, 255, 0) 43.49%), url('../images/pattern.png'); */
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), red 10%, transparent), url('../images/pattern.png'); */
+  /* background-repeat: no-repeat;
+  background-position: left 50px bottom -50px; */
+  /* background-size: cover; */
+  height: 350px;
+}
+
+.section-content img {
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+  display: block;
+  /* max-width: 100%; Esto se utiliza en propiedades y valores físicos*/
+  max-inline-size: 100%;
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+/*Solamente para visualización, no lo lee Google*/
+.section-content h3::before {
+  content: counter(titleList, decimal) ". ";
+  /* content: "-" counter(titleList, decimal) "-"; */
+}
+
+/* .section-content h3::after {
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: var(--white30);
+  display: inline-block;
+} */
+
+/* ::selection{
+  background: purple;
+} */
+
+.main hr {
+  display: none;
+}
+
+/* .main { */
+  /* border: 1px solid red; */
+  /* padding: 10px; */
+  /* background: red; */
+/* } */
+
+.wrapper {
+  /* border: 1px solid yellow; */
+  /* max-width: ; Esto se utiliza en propiedades y valores físicos*/
+  /* inline-size: 636px;Esto se utiliza en propiedades y valores lógicos */
+  /* max-width: 636px; Esto se utiliza en propiedades y valores físicos*/
+  max-inline-size: 902px;/*Esto se utiliza en propiedades y valores lógicos*/
+  /* max-block-size: ; */
+  /* width: ; Esto es el largo en propiedades y valores  físicos*/
+  /* block-size: 100px; Esto se utiliza en propiedades y valores lógicos*/
+  /* overflow: hidden; Esto se utiliza en propiedades y valores lógicos*/
+  /* overflow: auto; Esto se utiliza en propiedades y valores lógicos*/
+  /* height: ; Esto es el alto en propiedades y valores físicos */
+  margin: auto;
+}
+
+.main-content {
+  /* border: 1px solid blue; */
+  /* padding: 60px; */
+  padding-inline: 16px;
+  /* background: blue; */
+}
+
+/* .section-content blockquote p {
+  color: var(--white30);
+  font-size: 24px;
+} */
