@@ -119,7 +119,7 @@ header a:hover {
 nav details summary {
   font-weight: bold;
   color: var(--white30);
-  margin-block-start: 24px;
+  /* margin-block-start: 24px; */
 }
 
 /* ol li:nth-child(even) {
@@ -299,3 +299,48 @@ blockquote p {
   color: var(--white30);
   font-size: 24px;
 } */
+
+.slider {
+  /* border: 1px solid red; */
+}
+
+.slider-container {
+  /* block-size: 100px; */
+  /* display: inline; */
+  display: block;
+  /* border: 10px solid blue; */
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+/* .slider-slide h1 {
+  margin: 0;
+  border: 1px solid blue;
+  display: inline-block;
+  width: 100%;
+} */
+
+.video {
+  margin: 0;
+  /* border: 1px solid blue; */
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  /* border: 1px solid yellow; */
+  text-align: center;
+  margin-block-start: 16px;
+}
+
+.slider-bullet{
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: white;
+  border-radius: 50%;
+}
