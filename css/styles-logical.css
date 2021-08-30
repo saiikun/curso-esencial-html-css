@@ -344,3 +344,32 @@ blockquote p {
   background: white;
   border-radius: 50%;
 }
+
+.form input {
+  /* width: 100%; */
+  inline-size: 100%;
+  /* border: 5px solid red; */
+  box-sizing: border-box;
+  border: 1px solid var(--white30);
+  background: var(--white10);
+  border-radius: 8px;
+  padding-block: 12px;
+  /* padding-inline-start: 16px;
+  padding-inline-end: 372px; */
+  padding-inline: 16px;
+  color: var(--white30);
+  font-size: 16px;
+  margin-block-end: 24px;
+  display: block;
+  /* font-weight: normal; */
+}
+
+.form input[type="submit"] {
+  background: #157EFB;
+  border: none;
+  /* padding-inline: 16px; */
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--white20);
+}
