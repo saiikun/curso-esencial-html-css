@@ -66,9 +66,9 @@ body {
 } */
 
 .header {
-  position: sticky;
+  /* position: sticky; */
   /* inset-block-start: 0; */
-  inset-block-start: -44px;
+  /* inset-block-start: -44px; */
   /* background: red; */
   /* position: absolute; */
   /* position: fixed; */
@@ -83,25 +83,28 @@ body {
 }
 
 .header-content {
-  position: relative;
-  inset-block-start: 64px;
+  /* position: relative;
+  inset-block-start: 64px; */
+  padding-inline: 20px;
+  /* padding-block: 8px; */
 }
 
 header {
+  margin-block-start: 20px;
   /* --white10: red; */
   font-size: 14px;
   color: var(--white20);
-  position: absolute;
+  /* position: absolute; */
   /* top */
   /* inset-block-start: 64px; */
-  inset-block-start: 0;
+  /* inset-block-start: 0; */
   /* bottom */
   /* inset-block-end: ; */
   /* left */
-  inset-inline-start: -208px;
+  /* inset-inline-start: -208px; */
   /* right */
   /* inset-inline-end: ; */
-  inline-size: 188px;
+  /* inline-size: 188px; */
 }
 
 header li {
@@ -132,10 +135,10 @@ h1, h2 {
 }
 
 h1 {
-  /* font-size: 60px; */
-  font-size: 4em;
+  font-size: 40px;
+  /* font-size: 1.5em; */
   /* text-align: end; */
-  margin-block-start: 64px;
+  margin-block-start: 20px;
   margin-block-end: 16px;
   /* text-align: ; */
   /* text-align: start; */
@@ -226,7 +229,9 @@ blockquote p {
   /* background-repeat: no-repeat;
   background-position: left 50px bottom -50px; */
   /* background-size: cover; */
-  height: 350px;
+  /* height: 350px; */
+  /* block-size: 350px; */
+  block-size: 50px;
 }
 
 .section-content img {
@@ -372,4 +377,33 @@ blockquote p {
 
 .form input::-webkit-input-placeholder {
   color: var(--white20);
+}
+
+@media screen and (min-width: 1366px) {
+.hero {
+  block-size: 350px;
+}
+
+  .header {
+    position: sticky;
+    inset-block-start: -44px;
+  }
+
+  .header-content {
+    position: relative;
+    inset-block-start: 64px;
+    padding-inline: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -208px;
+    inline-size: 188px;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
 }
